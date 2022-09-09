@@ -1,15 +1,26 @@
 .App {
   text-align: center;
 	font-family: 'Zilla Slab', serif;;
+	font-size: 12px;
+}
+
+.flex{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.flex div{
+	margin: 30px;
 }
 
 .avatar img{
-	height: 150px;
-	width: 150px;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
 }
 
 .bloggercard{
-	border: 0.5px solid blue;
 	border-radius: 5px;
 	height: 280px;
 	width:200px;
@@ -20,7 +31,7 @@
 	height: 20px;
 	width: 80px;
 	color: white;
-	background-color: blue;
+	background-color: rgb(0,0,150);
 	text-decoration: none;
 	border-radius: 5px;
 
@@ -29,9 +40,30 @@ a{
 	text-decoration: none;
 }
 
-span a{
-margin-right: 40px;
+span{
+margin-right: 20px;
+width: fit-content;
 }
+
+.bloggerAvi{
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+}
+
+.blogger{
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.bloggerpostscard{
+	display: flex;
+	flex-direction: column;
+}
+
+
 
 
 

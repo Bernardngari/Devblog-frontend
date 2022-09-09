@@ -12,7 +12,7 @@ function Home(){
 	},[])
 
 	return (
-		<div>
+		<div className='flex'>
 			<Homefeed blogs={blogs} />
 		</div>
 	)
