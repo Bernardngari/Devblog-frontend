@@ -25,6 +25,15 @@
 	border-radius: 5px;
 
 }
+a{
+	text-decoration: none;
+}
+
+span a{
+margin-right: 40px;
+}
+
+
 
 
 

@@ -1,14 +1,14 @@
 import React from 'react'
 import { useParams,Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
+import Deleteblog from './Deleteblog'
+import Editblog from './Editblog'
 
 /*Rendered through App */
 
 function Bloggerwithblogs(){
 	const {id} = useParams()
 	const[blogger, setBlogger] = useState([])
-	
-	const[bloggerData, setBloggerData] = useState([])
 
 	useEffect(() =>{
 		let url =  `http://localhost:9292/bloggers/${id}`
@@ -25,9 +25,13 @@ function Bloggerwithblogs(){
 				<div key={blog.id}>
 					<h2>{blog.topic}</h2>
 					<p>{blog.body}</p>
+					<span>
 					<Link to="/">
-						<i className="fa-solid fa-arrow-left"></i> Home
+							<i className="fa-solid fa-arrow-left"></i> <i className="fa-sharp fa-solid fa-house"></i>
 					</Link>
+					<Deleteblog id={blog.id} />
+					<Editblog id={blog.id} blog={blog} />
+					</span>
 				</div>
 			))
 		):
