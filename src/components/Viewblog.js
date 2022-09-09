@@ -5,9 +5,10 @@ import { Link} from 'react-router-dom'
 
 
 function Viewblog({id}){
+	
 	return (
 		<>
-			<Link className='btn' to={`/bloggers/${id}/blogposts`}>
+			<Link className='btn' to={`/bloggers/${id}`}>
 				View Blogs
 			</Link>
 		</>
