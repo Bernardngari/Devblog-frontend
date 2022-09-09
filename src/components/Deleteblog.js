@@ -34,7 +34,7 @@ function Deleteblog({id}){
 	}
 			
 	return (
-		< span onClick={submit} style={{color:"red"}}>
+		< span onClick={submit} className="delete">
 			<i className="fa-solid fa-trash"></i> Delete
 		</span>
 	)

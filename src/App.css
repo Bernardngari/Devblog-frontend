@@ -2,12 +2,36 @@
   text-align: center;
 	font-family: 'Zilla Slab', serif;;
 	font-size: 12px;
+	background-color: #949FA1;
+	height: 100vh;
 }
 
 .flex{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+}
+
+nav{
+	border-bottom:solid blue 0.5px ;
+	height: 10vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav a{
+	text-decoration: none;
+	color: white;
+}
+
+.logo{
+	width: 80px;
+	height: 20px;
+	background-color: rgb(42, 42, 98);
+	border-radius: 3px;
+	margin-left: 20px;
 }
 
 .flex div{
@@ -46,8 +70,8 @@ width: fit-content;
 }
 
 .bloggerAvi{
-	height: 50px;
-	width: 50px;
+	height: 30px;
+	width: 30px;
 	border-radius: 50%;
 }
 
@@ -61,6 +85,10 @@ width: fit-content;
 .bloggerpostscard{
 	display: flex;
 	flex-direction: column;
+}
+
+.delete{
+	color:red;
 }
 
 
