@@ -1,6 +1,8 @@
 import React from 'react'
+import Viewblog from './Viewblog';
 
-/*data received as props from HOME*/
+/*data received as props from Home/ rendered through Home*/
+/*Creates blogger cards on Home page*/
 
 function Homefeed({blogs}) {
 	let blogcontent = blogs.map((blog)=> (
@@ -8,7 +10,9 @@ function Homefeed({blogs}) {
 						<div className='avatar'>
 							<img src={blog.image} alt={blog.name} />
 						</div>
-						<p>{blog.name}</p>
+						<p><strong>Name:</strong> {blog.name}</p>
+						<p><strong>Number of blogs:</strong> {blog.blogposts.length}</p>
+						<p><Viewblog  id={blog.id}/></p>
 				</div>
 		))
 	return (
