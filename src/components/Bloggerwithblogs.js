@@ -19,7 +19,17 @@ function Bloggerwithblogs(){
 			.then(data => {
 				setBlogger(data.blogposts);
 			})
-	},[])
+	},[blogger])
+
+	function onEditBlog(editedBlog){
+		let updatedList = {...blogger, editedBlog}
+		setBlogger(updatedList);
+	}
+
+	function onDelete(deletedBlog){
+		let updatedList = blogger.filter((blog)=> blog.id== !deletedBlog.id)
+		setBlogger(updatedList)
+	}
 
 
 
@@ -33,11 +43,11 @@ function Bloggerwithblogs(){
 		(blogger.length > 0?(
 			blogger.map((blog) =>(
 				<div key={blog.id}>
-					<h2>{blog.topic}</h2>
+					<h3>{blog.title}</h3>
 					<p>{blog.body}</p>
-					<span>
-					<Deleteblog id={blog.id} />
-					<Editblog id={blog.id} blog={blog} />
+				<span>
+					<Deleteblog id={blog.id} onDelete={onDelete}/>
+					<Editblog blog={blog} onEditBlog={onEditBlog} />
 					</span>
 				</div>
 			))

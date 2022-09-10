@@ -1,10 +1,9 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
 import { confirmAlert } from 'react-confirm-alert'
 import 'react-confirm-alert/src/react-confirm-alert.css';
 
 
-function Deleteblog({id}){
+function Deleteblog({id,onDelete}){
 	//let navigate = useNavigate()
 		function handleSubmit(){
 			fetch(`http://localhost:9292/blogposts/${id}`,{
@@ -13,7 +12,8 @@ function Deleteblog({id}){
 					"Content-Type": "application/json"
 					},
 			})
-			window.location.reload()
+			.then(r => r.json())
+			.then((deletedBlog) => onDelete(deletedBlog))
 		}
 
 	function submit(){
