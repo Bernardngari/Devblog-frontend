@@ -3,6 +3,7 @@ import Home from './components/Home';
 import Bloggerwithblogs from './components/Bloggerwithblogs';
 import {Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Newblogger from './components/Newblogger';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
 			<Routes>
 				<Route path ="/" element={<Home />} />
 				<Route path = "/bloggers/:id" element={<Bloggerwithblogs />} />
+				<Route path="/addbloggers" element={<Newblogger />} />
 			</Routes>
     </div>
   );

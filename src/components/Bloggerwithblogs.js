@@ -49,7 +49,6 @@ function Bloggerwithblogs(){
 					<i className="fa-solid fa-arrow-left"></i> Go Back Home
 				</Link>
 			</>
-		
 		)
 		)
 	)
