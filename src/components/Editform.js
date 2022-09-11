@@ -11,7 +11,7 @@ function Editform({blog,onEditBlog,isEditing,setisEditing}){
 
 	function handleSubmit(e){
 		e.preventDefault()
-		fetch(`http://localhost:9292/blogposts/${blog.id}`,{
+		fetch(`https://devblog-2.herokuapp.com/blogposts/${blog.id}`,{
 			method: "PATCH",
 			headers: {
 				"Content-Type": "application/json"

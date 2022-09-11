@@ -5,7 +5,7 @@ import 'react-confirm-alert/src/react-confirm-alert.css';
 
 function Deleteblog({id,onDelete}){
 		function handleSubmit(){
-			fetch(`http://localhost:9292/blogposts/${id}`,{
+			fetch(`https://devblog-2.herokuapp.com/blogposts/${id}`,{
 				"method" : "DELETE",
 				"headers" :{
 					"Content-Type": "application/json"

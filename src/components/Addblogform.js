@@ -7,7 +7,7 @@ function Addblogform(){
 	const {id} = useParams()
 	const navigate = useNavigate()
 	const[data, setData] = useState({blogger_id: id})
-	let url = "http://localhost:9292/blogposts"
+	let url = "https://devblog-2.herokuapp.com/blogposts"
 	let redirect = `/bloggers/${id}`
 
 	function handleChange(e){

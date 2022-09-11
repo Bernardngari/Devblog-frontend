@@ -14,7 +14,7 @@ function Newblogger(){
 const navigate = useNavigate()
 	function handleSubmit(e){
 			e.preventDefault()
-		fetch("http://localhost:9292/addbloggers", {
+		fetch("https://devblog-2.herokuapp.com/addbloggers", {
 			method:"POST",
 			headers: {
 				"Content-Type":"application/json"

@@ -14,7 +14,7 @@ function Bloggerwithblogs(){
 	const[bloggerData, setBloggerData] = useState({})
 
 	useEffect(() =>{
-		let url =  `http://localhost:9292/bloggers/${id}`
+		let url =  `https://devblog-2.herokuapp.com/bloggers/${id}`
 		fetch(url)
 			.then(res => res.json())
 			.then(data => {
@@ -34,7 +34,7 @@ function Bloggerwithblogs(){
 	}
 
 	useEffect(() =>{
-		let url =  `http://localhost:9292/bloggers/${id}`
+		let url =  `https://devblog-2.herokuapp.com/bloggers/${id}`
 		fetch(url)
 			.then(res => res.json())
 			.then(data => setBloggerData(data))
