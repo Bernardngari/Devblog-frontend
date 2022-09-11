@@ -104,6 +104,23 @@ width: fit-content;
 	color:red;
 }
 
+.plus{
+	color: white;
+	height: 60px;
+	width: 60px;
+	background-color: blue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+
+}
+
+.buttoncontainer{
+	display: flex;
+	justify-content: flex-end;
+}
+
 
 
 

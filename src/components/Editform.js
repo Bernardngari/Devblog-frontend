@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 
-function Editform({blog,onEditBlog}){
+function Editform({blog,onEditBlog,isEditing,setisEditing}){
 
 		const[blogdata, setBlogData] = useState(blog)
 
@@ -20,6 +20,8 @@ function Editform({blog,onEditBlog}){
 		})
 			.then(r => r.json())
 			.then(editedBlog => onEditBlog(editedBlog))
+			setisEditing(()=> !isEditing)
+
 			setBlogData({})
 	}
 	return (

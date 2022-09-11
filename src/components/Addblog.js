@@ -1,16 +1,24 @@
 import React from 'react'
-import { useState } from 'react'
+import Addblogform from './Addblogform'
+import { useState } from 'react';
 
 function Addblog({id}){
-		const[isAdding, setIsAdding] = useState(false)
+
+	function handle(e){
+		console.log(e.target);
+	}
 
 	return (
-		<div>
-			{isAdding?
-			 <Addblogform />
-			 :
-			 <i class="fa-solid fa-plus"></i>
-			 }
+		<div className='buttoncontainer'id={id}>
+			<div 
+			 	className='plus'
+			  to="/addblog/:id" 
+				id={id} 
+				onClick={handle} >
+				<i id={id}
+				className="fa-solid fa-plus">
+				</i>
+			</div>
 		</div>
 	)
 }

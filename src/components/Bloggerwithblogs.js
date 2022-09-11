@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import Deleteblog from './Deleteblog'
 import Editblog from './Editblog'
 import Blogger from './Blogger'
+import Addblog from './Addblog'
 
 /*Rendered through App */
 
@@ -22,16 +23,16 @@ function Bloggerwithblogs(){
 	},[blogger])
 
 	function onEditBlog(editedBlog){
-		let updatedList = {...blogger, editedBlog}
-		setBlogger(updatedList);
+		console.log(editedBlog);
+		let removecurrentblog = blogger.filter(blog => blog.id=!editedBlog.id)
+		let updated = [...removecurrentblog, editedBlog]
+		setBlogger(updated);
 	}
 
 	function onDelete(deletedBlog){
 		let updatedList = blogger.filter((blog)=> blog.id== !deletedBlog.id)
 		setBlogger(updatedList)
 	}
-
-
 
 	useEffect(() =>{
 		let url =  `http://localhost:9292/bloggers/${id}`
@@ -67,6 +68,7 @@ function Bloggerwithblogs(){
 			<Blogger blogger={bloggerData}/>
 			<hr />
 			{blogs}
+			<Addblog id={bloggerData.id}/>
 		</div>
 	)
 }

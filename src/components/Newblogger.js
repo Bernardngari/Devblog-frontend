@@ -44,6 +44,7 @@ const navigate = useNavigate()
 				placeholder='Upload your picture url' 
 				defaultValue={formData.image} 
 				onChange={handleChange}
+				required
 				name="image"
 				/>
 			<br />

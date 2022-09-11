@@ -14,7 +14,7 @@ function Editblog({blog, onEditBlog}){
 	return (
 		<span onClick={handleEdit}>
 			{isEditing ? 
-			<Editform blog={blog} onEditBlog={onEditBlog}/>
+			<Editform blog={blog} onEditBlog={onEditBlog} isEditing={isEditing} setisEditing={setisEditing}/>
 			: 
 			<i className="fa-regular fa-pen-to-square" id={blog.id}>  edit</i> } 
 		</span>
