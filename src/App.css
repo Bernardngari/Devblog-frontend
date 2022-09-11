@@ -105,6 +105,21 @@ width: fit-content;
 	color:red;
 }
 
+.delete:hover{
+	background-color: #2A2A62;
+	padding: 5px;
+	border-radius: 5px;
+	cursor: progress;
+}
+
+.edit:hover{
+	background-color: #2A2A62;
+	padding: 5px;
+	border-radius: 5px;
+	color: white;
+	cursor: progress;
+}
+
 .plus{
 	color: white;
 	height: 40px;
@@ -163,15 +178,18 @@ button[type="submit"]{
 	background-color: #2A2A62;
 	color: white;
 	font-size: 20px;
+	cursor: progress;
 
 }
 
 .signup img{
-	border: 2px solid red;
+	border: 2px solid #2A2A62;
 	width: 150px;
 	height: 150px;
 	border-radius: 50%;
 }
+
+
 
 
 

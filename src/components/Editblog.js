@@ -16,7 +16,7 @@ function Editblog({blog, onEditBlog}){
 			{isEditing ? 
 			<Editform blog={blog} onEditBlog={onEditBlog} isEditing={isEditing} setisEditing={setisEditing}/>
 			: 
-			<i className="fa-regular fa-pen-to-square" id={blog.id}>  edit</i> } 
+			<span className='edit'><i className="fa-regular fa-pen-to-square" id={blog.id}>  edit</i></span> } 
 		</span>
 	)
 }
