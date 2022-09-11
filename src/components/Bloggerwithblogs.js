@@ -65,9 +65,9 @@ function Bloggerwithblogs(){
 	return (
 		<div>
 			<Blogger blogger={bloggerData}/>
+			<Addblog id={bloggerData.id}/>
 			<hr />
 			{blogs}
-			<Addblog id={bloggerData.id}/>
 		</div>
 	)
 }

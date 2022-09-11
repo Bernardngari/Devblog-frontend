@@ -20,9 +20,7 @@ function Addblog({id}){
 			  to="/addblog/:id" 
 				id={id} 
 				onClick={handle} >
-				<i id={id}
-				className="fa-solid fa-plus">
-				</i>
+				Add blog
 			</div>
 		</div>
 	)

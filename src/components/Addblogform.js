@@ -31,6 +31,7 @@ function Addblogform(){
 			<label htmlFor='title' />
 			<input 
 				type="text"
+				autoFocus
 				name="title"
 				required
 				onChange={handleChange}

@@ -26,6 +26,9 @@ const navigate = useNavigate()
 
 	return (
 		<form onSubmit={handleSubmit}>
+			<div className='signup'>
+				<img src={formData.image} alt="user avatar" />
+			</div>
 			<label htmlFor="name" />
 			<input 
 				type="text" 

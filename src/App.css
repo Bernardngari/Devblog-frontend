@@ -98,6 +98,7 @@ width: fit-content;
 .bloggerpostscard{
 	display: flex;
 	flex-direction: column;
+	margin-right: 75px;
 }
 
 .delete{
@@ -106,19 +107,21 @@ width: fit-content;
 
 .plus{
 	color: white;
-	height: 60px;
-	width: 60px;
-	background-color: blue;
+	height: 40px;
+	width: 100px;
+	background-color: #2A2A62;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-radius: 50%;
 
 }
 
 .buttoncontainer{
 	display: flex;
+	margin-right: 50px;
 	justify-content: flex-end;
+	position: sticky;
+	top: 0;
 }
 
 .blogcard{
@@ -126,6 +129,48 @@ width: fit-content;
 	margin: auto;
 	border-bottom: 1px solid blue;
 	line-height: 50px;
+}
+
+form{
+	width: 30%;
+	height: 500px;
+	border-radius: 5px;
+	margin: auto;
+	margin-top: 50px;
+}
+
+input, textarea[type="text"]{
+	margin-bottom: 20px;
+	margin-top: 20px;
+	width: 40%;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 20px;
+}
+
+input[type="text"]{
+	height: 30px;
+}
+
+textarea[type="text"]{
+	height: 300px;
+}
+
+
+button[type="submit"]{
+	height: 30px;
+	width: 100px;
+	background-color: #2A2A62;
+	color: white;
+	font-size: 20px;
+
+}
+
+.signup img{
+	border: 2px solid red;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
 }
 
 
