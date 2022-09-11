@@ -1,11 +1,16 @@
 import React from 'react'
 import Addblogform from './Addblogform'
 import { useState } from 'react';
+import {useNavigate} from 'react-router-dom';
 
 function Addblog({id}){
+	const navigate = useNavigate()
+	let url = `/addblog/${id}`
 
 	function handle(e){
-		console.log(e.target);
+		if(e){
+			navigate(url)
+		}
 	}
 
 	return (
