@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 function Newblogger(){
 	const [formData, setFormData] = useState({
 		name: "",
-		image: ""
+		image: "https://t3.ftcdn.net/jpg/01/18/01/98/360_F_118019822_6CKXP6rXmVhDOzbXZlLqEM2ya4HhYzSV.jpg"
 	})
 
 	function handleChange(e){
@@ -42,6 +42,7 @@ const navigate = useNavigate()
 				type="url" 
 				id="image"
 				placeholder='Upload your picture url' 
+				hidden
 				defaultValue={formData.image} 
 				onChange={handleChange}
 				required

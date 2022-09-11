@@ -23,10 +23,9 @@ function Bloggerwithblogs(){
 	},[blogger])
 
 	function onEditBlog(editedBlog){
-		console.log(editedBlog);
-		let removecurrentblog = blogger.filter(blog => blog.id=!editedBlog.id)
-		let updated = [...removecurrentblog, editedBlog]
-		setBlogger(updated);
+		let removecurrentblog = blogger.filter(blog => blog.id=!editedBlog.id) /*Removes the old version of the blog from state */
+		let updated = [...removecurrentblog, editedBlog] /* Adds the edited blog to state */
+		setBlogger(updated); /**Sets new state with edited blog included */
 	}
 
 	function onDelete(deletedBlog){
@@ -43,7 +42,7 @@ function Bloggerwithblogs(){
 	let blogs = (
 		(blogger.length > 0?(
 			blogger.map((blog) =>(
-				<div key={blog.id}>
+				<div key={blog.id} className="blogcard">
 					<h3>{blog.title}</h3>
 					<p>{blog.body}</p>
 				<span>

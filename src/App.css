@@ -38,13 +38,12 @@ nav a{
 }
 
 .logo{
-	width: 80px;
-	height: 20px;
+	width: 120px;
+	height: 30px;
 	background-color: rgb(42, 42, 98);
 	border-radius: 3px;
 	margin-left: 20px;
 	padding-top: 5px;
-
 }
 
 .flex div{
@@ -65,8 +64,9 @@ nav a{
 }
 
 .btn{
-	height: 20px;
-	width: 80px;
+	height: 25px;
+	font-size: 25px;
+	width: 120px;
 	color: white;
 	background-color: #2A2A62;
 	text-decoration: none;
@@ -119,6 +119,13 @@ width: fit-content;
 .buttoncontainer{
 	display: flex;
 	justify-content: flex-end;
+}
+
+.blogcard{
+	width: 70%;
+	margin: auto;
+	border-bottom: 1px solid blue;
+	line-height: 50px;
 }
 
 

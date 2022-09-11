@@ -9,7 +9,7 @@ function Viewblog({id}){
 	return (
 		<>
 			<Link className='btn' to={`/bloggers/${id}`}>
-				View Blogs
+				View blogs
 			</Link>
 		</>
 	)
