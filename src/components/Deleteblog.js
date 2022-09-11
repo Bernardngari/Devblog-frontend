@@ -4,7 +4,6 @@ import 'react-confirm-alert/src/react-confirm-alert.css';
 
 
 function Deleteblog({id,onDelete}){
-	//let navigate = useNavigate()
 		function handleSubmit(){
 			fetch(`http://localhost:9292/blogposts/${id}`,{
 				"method" : "DELETE",

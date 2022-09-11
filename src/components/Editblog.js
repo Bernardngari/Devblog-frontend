@@ -11,14 +11,12 @@ function Editblog({blog, onEditBlog}){
 			return isEditing
 		}
 	}
-
-	//console.log(isEditing);
 	return (
 		<span onClick={handleEdit}>
 			{isEditing ? 
 			<Editform blog={blog} onEditBlog={onEditBlog}/>
 			: 
-			<i className="fa-regular fa-pen-to-square" id={blog.id}></i> } 
+			<i className="fa-regular fa-pen-to-square" id={blog.id}>  edit</i> } 
 		</span>
 	)
 }

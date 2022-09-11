@@ -32,7 +32,10 @@ function Editform({blog,onEditBlog}){
 				 />
 			<br />
 			<label htmlFor='body' />
-			<input type="text" 
+			<textarea 
+				type="text" 
+				rows="10"
+				columns="100"
 				defaultValue={blogdata.body}
 				name="body"
 				onChange={handleChange}
