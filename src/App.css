@@ -40,6 +40,13 @@ nav a{
 	border-radius: 5px;
 }
 
+.navwrap a:hover{
+	color: #2A2A62;
+	background-color: aliceblue;
+	padding: 5px;
+	border-radius: 5px;
+}
+
 .logo{
 	width: 120px;
 	height: 30px;
