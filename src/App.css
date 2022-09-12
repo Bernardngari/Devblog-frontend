@@ -34,7 +34,10 @@ nav a{
 }
 
 .navwrap a{
-	color: #2A2A62;
+	color: #ffffff;
+	padding: 5px;
+	background-color: #2A2A62;
+	border-radius: 5px;
 }
 
 .logo{
