@@ -38,6 +38,8 @@ nav a{
 	padding: 5px;
 	background-color: #2A2A62;
 	border-radius: 5px;
+	width: 100px;
+	transition: width 0.5s;
 }
 
 .navwrap a:hover{
@@ -45,6 +47,7 @@ nav a{
 	background-color: aliceblue;
 	padding: 5px;
 	border-radius: 5px;
+	width: 120px;
 }
 
 .logo{
