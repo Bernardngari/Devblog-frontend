@@ -5,7 +5,7 @@ function Editblog({blog, onEditBlog}){
 		const[isEditing, setisEditing] = useState(false)
 
 	function handleEdit(e){
-		if(e.target.id == blog.id){
+		if(e.target.id === blog.id){
 			setisEditing(() => !isEditing)
 		} else{
 			return isEditing

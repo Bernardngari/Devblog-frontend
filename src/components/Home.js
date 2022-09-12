@@ -8,7 +8,7 @@ function Home(){
 		let url = "https://devblog-2.herokuapp.com/bloggers"
 		fetch(url)
 			.then( res => res.json())
-			.then(data => setBlogs(data))
+			.then(data => setBlogs(data.reverse()))
 	},[])
 
 	return (

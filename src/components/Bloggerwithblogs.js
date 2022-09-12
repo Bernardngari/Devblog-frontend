@@ -20,7 +20,7 @@ function Bloggerwithblogs(){
 			.then(data => {
 				setBlogger(data.blogposts);
 			})
-	},[blogger])
+	},[blogger,id])
 
 	function onEditBlog(editedBlog){
 		let removecurrentblog = blogger.filter(blog => blog.id=!editedBlog.id) /*Removes the old version of the blog from state */
@@ -29,7 +29,7 @@ function Bloggerwithblogs(){
 	}
 
 	function onDelete(deletedBlog){
-		let updatedList = blogger.filter((blog)=> blog.id== !deletedBlog.id)
+		let updatedList = blogger.filter((blog)=> blog.id!==deletedBlog.id)
 		setBlogger(updatedList)
 	}
 
@@ -38,7 +38,7 @@ function Bloggerwithblogs(){
 		fetch(url)
 			.then(res => res.json())
 			.then(data => setBloggerData(data))
-	},[])
+	},[id])
 	let blogs = (
 		(blogger.length > 0?(
 			blogger.map((blog) =>(

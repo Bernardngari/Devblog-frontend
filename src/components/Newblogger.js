@@ -21,9 +21,11 @@ const navigate = useNavigate()
 			},
 			body: JSON.stringify(formData)
 		})
-		navigate("/")
+			navigate("/")
 	}
+	
 
+	
 	return (
 		<form onSubmit={handleSubmit}>
 			<div className='signup'>
