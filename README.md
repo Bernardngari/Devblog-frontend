@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Devblog
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Developed by:
+    Bernard Ngari
 
-## Available Scripts
+## Table Of Content
 
-In the project directory, you can run:
++ [Description](#Description)
++ [Features](#Features)
++ [Requirement](#Requirement)
++ [Installation-process](#Installation-process)
++ [Technologies-used](#Technologies-used)
++ [Live-Link](#Live-Link)
++ [Project-Backend](#Project-backend)
++ [License](#License)
++ [Authors-info](#Authors-info)
 
-### `npm start`
+## Description
+<p>Devblog is a site where software developers can share knowledge through short blogs or tips. It was built with a Sinatra back-end to test my grasp on Ruby back-end development. The front-end is built with React javascript.
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
+A user will be able to:
+1. Register, either anonymously with an alias, or their official name.
+2. Add a blog to their created account.
+3. Edit a mistyped blog.
+4. Delete a blog.
+## Requirement
+In order to use this web app, you will need:
+* A device to with a browser;either a smartphone, tablet or desktop computer.
+* An active internet connection.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation-process
+To test the web-app, you may run it from this [link](https://devblog-frontend.vercel.app/)
+If you wish to clone and experiment with some features, you clone [here](https://github.com/Bernardngari/Devblog-frontend) for the front-end and [here](https://github.com/Bernardngari/Devblog-backend) for the Sinatra back-end.
 
-### `npm test`
+## Technologies-used
+* Reactjs was used to create the components/structure.
+* CSS was used to style the page.
+* Ruby's Sinatra web application framework was used for the server_side.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Live-Link
+The app is hosted on Vercel at this [link](https://devblog-frontend.vercel.app/)
 
-### `npm run build`
+## Project-API
+The project's backend is hosted on [Heroku](https://devblog-2.herokuapp.com/) with end points /bloggers and /blogposts.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Authors-info
 
-### `npm run eject`
+* [Github](https://github.com/Bernardngari)
+* [LinkedIn](https://www.linkedin.com/in/bernardngari/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+[MIT]()
