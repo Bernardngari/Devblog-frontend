@@ -13,7 +13,11 @@ function Home(){
 
 	return (
 		<div className='flex'>
+			{blogs.length > 0?
 			<Homefeed blogs={blogs} />
+			: 
+			<p className='patience'>Good things take time. Please be patient as awesomeness loads. </p>
+			}
 		</div>
 	)
 }
