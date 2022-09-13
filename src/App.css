@@ -84,7 +84,13 @@ nav a{
 	background-color: #2A2A62;
 	text-decoration: none;
 	border-radius: 5px;
+}
 
+.btn:hover{
+	padding: 5px;
+	width: 190px;
+	color: #2A2A62;
+	background-color: aliceblue;
 }
 a{
 	text-decoration: none;
