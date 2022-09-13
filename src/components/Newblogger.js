@@ -27,7 +27,8 @@ const navigate = useNavigate()
 
 	
 	return (
-		<form onSubmit={handleSubmit}>
+		<form onSubmit={handleSubmit} className="addblogger-form">
+			<div style={{color:"white", fontSize: 40}}>Join the society</div>
 			<div className='signup'>
 				<img src={formData.image} alt="user avatar" />
 			</div>

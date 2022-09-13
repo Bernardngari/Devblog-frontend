@@ -212,6 +212,7 @@ button[type="submit"]:hover{
 	width: 150px;
 	height: 150px;
 	border-radius: 50%;
+	margin-top: 100px;
 }
 
 .editform{
@@ -242,6 +243,11 @@ button[type="submit"]:hover{
 	width: 99%;
 	height: fit-content;
 	height: 60%;
+}
+
+.addblogger-form{
+	background-color: #2A2A62;
+
 }
 
 
