@@ -25,7 +25,7 @@ function Home(){
 			</>
 			: 
 			<>
-				<p className='patience'>Good things take time.<br /> Please be patient as awesomeness loads. </p>
+				<p className='patience'>Loading... </p>
 				<Newblogger onAddUser={onAddUser}/>
 				
 			</>
