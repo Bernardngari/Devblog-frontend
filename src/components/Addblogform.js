@@ -27,7 +27,7 @@ function Addblogform(){
 	}
 	
 	return (
-		<form onSubmit={handleSubmit}>
+		<form onSubmit={handleSubmit} className="addblog-form">
 			<label htmlFor='title' />
 			<input 
 				type="text"

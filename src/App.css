@@ -219,7 +219,6 @@ button[type="submit"]:hover{
 	height: fit-content;
 	position: fixed;
 	top: 100px;
-	z-index: 2;
 	background-color: #2A2A62;
 }
 
@@ -232,6 +231,17 @@ button[type="submit"]:hover{
 	margin-top: 200px;
 	font-size: 40px;
 	font-weight: 900;
+}
+
+.addblog-form{
+	border: solid blue 2px;
+	background-color: #2A2A62;
+}
+
+.addblog-form textarea{
+	width: 99%;
+	height: fit-content;
+	height: 60%;
 }
 
 
