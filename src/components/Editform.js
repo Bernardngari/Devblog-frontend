@@ -26,14 +26,16 @@ function Editform({blog,onEditBlog,isEditing,setisEditing}){
 	}
 	return (
 		<form onSubmit={handleSubmit}>
-			<label htmlFor="title" />
+			<label htmlFor="title"><strong>Change Blog title</strong></label>
+			<br />
 			<input type="text" 
 				defaultValue={blogdata.title}
 				name="title"
 				onChange={handleChange}
 				 />
 			<br />
-			<label htmlFor='body' />
+			<label htmlFor='body'><strong>Change Blog content</strong></label>
+			<br />
 			<textarea 
 				type="text" 
 				rows="10"
