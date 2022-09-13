@@ -1,6 +1,7 @@
 import React from 'react'
 import {useEffect, useState} from "react"
 import Homefeed from './Homefeed'
+import Newblogger from './Newblogger'
 /*Rendered through App component,passes props to Homefeed*/
 function Home(){
 	const[blogs, setBlogs] = useState([])
@@ -9,14 +10,25 @@ function Home(){
 		fetch(url)
 			.then( res => res.json())
 			.then(data => setBlogs(data.reverse()))
-	},[])
+	},[blogs])
+
+	function onAddUser(newblogger){
+		let newlist = [...blogs, newblogger]
+		setBlogs(newlist)
+	}
 
 	return (
 		<div className='flex'>
 			{blogs.length > 0?
+			<>
 			<Homefeed blogs={blogs} />
+			</>
 			: 
-			<p className='patience'>Good things take time. Please be patient as awesomeness loads. </p>
+			<>
+				<p className='patience'>Good things take time.<br /> Please be patient as awesomeness loads. </p>
+				<Newblogger onAddUser={onAddUser}/>
+				
+			</>
 			}
 		</div>
 	)

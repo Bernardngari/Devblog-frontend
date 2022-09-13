@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 
-function Newblogger(){
+function Newblogger({onAddUser}){
 	const [formData, setFormData] = useState({
 		name: "",
 		image: "https://t3.ftcdn.net/jpg/01/18/01/98/360_F_118019822_6CKXP6rXmVhDOzbXZlLqEM2ya4HhYzSV.jpg"
@@ -11,10 +11,11 @@ function Newblogger(){
 	function handleChange(e){
 		setFormData({...formData, [e.target.name]: e.target.value})
 	}
-const navigate = useNavigate()
+
+	const navigate = useNavigate()
 	function handleSubmit(e){
 			e.preventDefault()
-		fetch("https://devblog-2.herokuapp.com/addbloggers", {
+		fetch("https://devblog-2.herokuapp.com/addbloggers",{
 			method:"POST",
 			headers: {
 				"Content-Type":"application/json"
@@ -22,11 +23,9 @@ const navigate = useNavigate()
 			body: JSON.stringify(formData)
 		})
 		.then(res => res.json())
-		.then(newblogger =>console.log(newblogger))
-			navigate("/")
+		.then(newblogger =>onAddUser(newblogger))
+			setTimeout(()=>{navigate("/")},500)
 	}
-	
-
 	
 	return (
 		<form onSubmit={handleSubmit} className="addblogger-form">

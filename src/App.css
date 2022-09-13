@@ -247,7 +247,13 @@ button[type="submit"]:hover{
 
 .addblogger-form{
 	background-color: #2A2A62;
+	height: fit-content;
 
+}
+
+.flex .addblogger-form{
+	display: none;
+	/*visibility: hidden;*/
 }
 
 
