@@ -34,8 +34,7 @@ function Editform({blog,onEditBlog,isEditing,setisEditing}){
 				onChange={handleChange}
 				 />
 			<br />
-			<label htmlFor='body'><strong>Change Blog content</strong></label>
-			<br />
+			<label htmlFor='body' />
 			<textarea 
 				type="text" 
 				rows="10"
