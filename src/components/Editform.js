@@ -25,8 +25,8 @@ function Editform({blog,onEditBlog,isEditing,setisEditing}){
 			setBlogData({})
 	}
 	return (
-		<form onSubmit={handleSubmit}>
-			<label htmlFor="title"><strong>Change Blog title</strong></label>
+		<form onSubmit={handleSubmit} className="editform">
+			<label htmlFor="title"><strong style={{color:"white"}}>Change Blog title</strong></label>
 			<br />
 			<input type="text" 
 				defaultValue={blogdata.title}
