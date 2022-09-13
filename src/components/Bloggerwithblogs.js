@@ -18,7 +18,7 @@ function Bloggerwithblogs(){
 		fetch(url)
 			.then(res => res.json())
 			.then(data => {
-				setBlogger(data.blogposts);
+				setBlogger(data.blogposts.reverse());
 			})
 	},[blogger,id])
 

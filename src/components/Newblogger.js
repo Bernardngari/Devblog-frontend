@@ -21,6 +21,8 @@ const navigate = useNavigate()
 			},
 			body: JSON.stringify(formData)
 		})
+		.then(res => res.json())
+		.then(newblogger =>console.log(newblogger))
 			navigate("/")
 	}
 	
